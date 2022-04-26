@@ -19,10 +19,10 @@ body{
 
 .container{
     padding: 20px;
-    width: 100%;
     margin: 0 auto;
     display: block;
     float: left;
+    max-width: 100%;
 }
 
 header{
@@ -69,6 +69,11 @@ p{
     line-height: 1.4;
     color: #454545
 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 ol{
@@ -150,3 +155,38 @@ footer small{
     font-size: 80%;
     display: block;
 }
+
+.cog-branding{
+    visibility: hidden !important;
+}
+
+
+.cog-branding__powered{
+    visibility: hidden !important; 
+}
+
+.cog-branding--minimal {
+
+    visibility: hidden !important;
+}
+
+.cog-abuse.cog-wrapper{
+
+    visibility: hidden !important;
+}
+
+
+.cog-branding.cog-branding--minimal{
+
+    visibility: hidden !important;
+    display: flex !important;
+    
+}
+
+.cognito{
+
+    height: 380px;
+    overflow: hidden;
+
+}
+
