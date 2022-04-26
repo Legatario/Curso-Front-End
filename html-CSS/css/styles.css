@@ -23,6 +23,7 @@ body{
     display: block;
     float: left;
     max-width: 100%;
+    max-width: 1198px;
 }
 
 header{
@@ -107,7 +108,7 @@ section nav {
 
 nav li{
 
-    margin: 1px 20px 5px 0;
+    margin: 1px 20px 1px 0;
     padding: 10px;
     background-color: #efefef;
 }
@@ -190,3 +191,14 @@ footer small{
 
 }
 
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }  
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
