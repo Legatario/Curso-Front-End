@@ -239,8 +239,10 @@ footer small{
     background-position: center;
     background-size: contain;
     width: 100vw;
-    height: 60vh;
+    height: 50vw;
+    padding: 0;
 }
+
 
 .legenda-container{
     width: 30vw;  
