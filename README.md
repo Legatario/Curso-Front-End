@@ -4,23 +4,23 @@ Este projeto contem tecnicas para o desenvolvimento das linguagens HTML e CSS
 
 Ele contém...
 
-# Home Page
+## Home Page
 
 Uma pagina falando um pouco sobre mim
 
-# Contatos
+## Contatos
 
 Uma pagina mostrando como seria o layout de um formulario. Ele não esta implementado com o back-end
 
-# Tabelas
+## Tabelas
 
 Uma pagina mostrando as funcionalidades de uma tabela
 
-# Quero Café
+## Quero Café
 
 uma pagina amistosa convidando-o para tomar café
 
 
-# Status do projeto
+## Status do projeto
 
 > :construction: Projeto em construção :construction:
