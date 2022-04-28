@@ -35,7 +35,7 @@ uma pagina amistosa convidando-o para tomar café
  > git push (enviar alterações para o repositório GitHub)
  > git pull (puxar / trazer alterações do GitHub para sua máquina)
 
-## GitFlow
+## GitFlow.
 Fluxo do Git
 
 ### Branchs
