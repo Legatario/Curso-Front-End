@@ -25,7 +25,7 @@ uma pagina amistosa convidando-o para tomar café
 
 > :construction: Projeto em construção :construction:
 > 
-> Este projeto tem como intuito aprender as funcionalidades do githob como:
+># Este projeto tem como intuito aprender as funcionalidades do githob como:
 > 
 ## Commits
  Informação de alteração
