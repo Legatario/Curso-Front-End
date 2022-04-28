@@ -45,15 +45,15 @@ table tr td:first-child {
 	font-weight: bold;
 }
 
-table th {
-}
+/* table th {
+} */
 
 .table-container {
 	padding: 3rem 2rem;
 }
 
-.table-container h3 {
-}
+/* .table-container h3 {
+} */
 
 .table-container tfoot {
 	background: rgba(14, 247, 6, .4);
