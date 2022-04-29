@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   
 body{
 
@@ -68,74 +67,3 @@ footer{
 
     width: 100%;
 }
-=======
-  
-body{
-
-    height: 100vh;
-    background-color: #efefef;
-    overflow: overlay;
-    
-}
-
-
-.width-100 {
-
-    width: 100%;
-    width: 100vw;
-    background-color: white;
-    padding: 0px 0px 20px 0px;
-    height: 400px;
-
-}
-
-nav{
-
-    background-color: grey;
-    width: 20%;
-    float: left;
-    display: table;
-    display: block;
-    height: 100%;
-    
-}
-
-article{
-
-    
-    background-color: antiquewhite;
-    width: 80%;
-    float: left;
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-
-.fixa{
-    width: 200px;
-    background: yellow;
-    margin: 40px auto;
-    text-align: center;
-    font-size: 40px;
-}
-
-.background{
-
-    background-color: lightcoral;
-    background-image: url(../images/pattern.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 50vh;
-
-}
-
-div picture img{
-
-    width: 100%;
-}
-
-footer{
-
-    width: 100%;
-}
->>>>>>> 89077e886016404c4d137fb2f8b03b3702363147
