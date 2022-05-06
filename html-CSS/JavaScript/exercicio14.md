@@ -1,60 +1,60 @@
 # 1 Operações 
 
-10+15 = 25
+10+15 = 25 // Typeof Number
 
-"10"+2 = 102
+"10"+2 = 102 // Typeof String
 
-"10"*2 = 20
+"10"*2 = 20 // Typeof number
 
-"10"/3 =3.3333
+"10"/3 =3.3333 // Typeof Number
 
-"10"%3 = 1
+"10"%3 = 1 // Typeof Number
 
-10 + true = 11
+10 + true = 11 // Typeof Number
 
-10=="10" = true
+10=="10" = true // Typeof Boolean
 
-10<11 = true
+10<11 = true // Typeof Boolean
 
-10>12= false
+10>12= false // Typeof Boolean
 
-10 <= 10.1 = true
+10 <= 10.1 = true // Typeof Boolean
 
-10>9.99 = true
+10>9.99 = true // Typeof Boolean
 
-10!="dez" = true
+10!="dez" = true // Typeof Boolean
 
-10 + true = 11
+10 + true = 11 // Typeof Number
 
-"dez"+true = deztrue
+"dez"+true = deztrue // Typeof String
 
-10+false = 10
+10+false = 10 // Typeof Number
 
-10*false= 0
+10*false= 0 // Typeof Number
 
-true+true = 2
+true+true = 2 // Typeof Number
 
-10++= error
+10++= error // Typeof NaN
 
-10--=error
+10--=error // Typeof NaN
 
-1&1= 1
+1&1= 1 // Typeof Number
 
-1&0= 0
+1&0= 0 // Typeof Number
 
-0&0 = 0
+0&0 = 0 // Typeof Number
 
-0&1= 0
+0&1= 0 // Typeof Number
+ 
+5+5 == 10 = true // Typeof Boolean
 
-5+5 == 10 = true
+"5"+"5" == 10 = false // Typeof Boolean
 
-"5"+"5" == 10 = false
+"5"*2>9 = true // Typeof Boolean
 
-"5"*2>9 = true
+(10+10)*2 = 40 // Typeof Number
 
-(10+10)*2 = 40
-
-10+10*2 = 30
+10+10*2 = 30 // Typeof Number
 
 # 2 Responda
 
