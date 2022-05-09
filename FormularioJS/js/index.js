@@ -26,7 +26,51 @@ function checkInputs() {
     
     else {
 
+        successValidation(Nome)
+
     }
+
+    if(emailValue === ''){
+
+        errorValidation(email, 'Preencha esse campo')
+    }
+
+    else{
+
+        successValidation(email)
+    }
+
+    if(passwordValue === ''){
+
+        errorValidation(senha, 'Preencha esse campo')
+    }
+
+    else if(passwordValue.length < 8){
+
+        errorValidation(senha, 'A senha deve ter mais de 8 caracteres')
+    }
+
+    else{
+
+        successValidation(senha)
+    }
+
+    if(password2Value === ''){
+
+        errorValidation(senha2, "Preencha esse campo")
+    }
+
+    else if(password2Value !== passwordValue){
+
+        errorValidation(senha2, 'As senhas não são as mesmas')
+
+    }
+
+    else{
+
+        successValidation(senha2)
+    }
+
 
 }
 
@@ -35,9 +79,19 @@ function  errorValidation(input, message) {
 
 
     const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+
+    small.innerText = message
 
 
     formControl.className = 'form-control error'
 
 
+}
+
+function successValidation(input){
+
+    const formControl = input.parentElement;
+
+    formControl.className = 'form-control success'
 }
