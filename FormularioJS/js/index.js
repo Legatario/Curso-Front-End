@@ -95,3 +95,80 @@ function successValidation(input){
 
     formControl.className = 'form-control success'
 }
+
+
+function nomeValidity(){
+
+    const nomeValue = Nome.value.trim()
+
+    if(nomeValue === ''){
+
+        errorValidation(Nome, 'Preencha esse campo')
+    } 
+    
+    else {
+
+        successValidation(Nome)
+
+    }
+}
+
+
+function emailValidty(){
+
+    const emailValue = email.value.trim()
+
+    if(emailValue === ''){
+
+        errorValidation(email, 'Preencha esse campo')
+    }
+
+    else{
+
+        successValidation(email)
+    }
+}
+
+
+function senhaValidty(){
+
+    const passwordValue = password.value.trim()
+
+    if(passwordValue === ''){
+
+        errorValidation(senha, 'Preencha esse campo')
+    }
+
+    else if(passwordValue.length < 8){
+
+        errorValidation(senha, 'A senha deve ter mais de 8 caracteres')
+    }
+
+    else{
+
+        successValidation(senha)
+    }
+}
+
+
+function senha2Validty(){
+
+    const passwordValue = password.value.trim()
+    const password2Value = password2.value.trim()
+
+    if(password2Value === ''){
+
+        errorValidation(senha2, "Preencha esse campo")
+    }
+
+    else if(password2Value !== passwordValue){
+
+        errorValidation(senha2, 'As senhas não são as mesmas')
+
+    }
+
+    else{
+
+        successValidation(senha2)
+    }
+}
