@@ -4,7 +4,31 @@ function customValidation(event){
 
     const field = event.target
 
-    field.setCustomValidity("Esse campo é obrigatorio")
+    function verifyErrors(){
+
+        let foundError = false;
+
+        for (const error in field.validity){
+
+            if(error != "customError" && field.validity[error]){
+                foundError = true
+            }
+
+        }
+        return foundError;
+    }
+
+    const error = verifyErrors()
+
+    if(error){
+        field.setCustomValidity("Esse campo é obrigatorio")
+
+    }
+
+    else{
+        field.setCustomValidity("")
+    }
+
 
 }
 
@@ -13,10 +37,6 @@ for ( const field of fields) {
     }
 
    
-
-
-
-
 
 document.querySelector("form").addEventListener("submit",event =>{
 
