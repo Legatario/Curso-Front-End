@@ -26,6 +26,7 @@ textarea{
     width: 30%;
     float: left;
     margin: 5px;
+    height: 550px;
 
 }
 
@@ -33,6 +34,7 @@ textarea{
 
     .card{
         width: 48%;
+        height: 600px;
     }
     
 }
@@ -41,6 +43,20 @@ textarea{
 
     .card{
         width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+@media (max-width: 415px) {
+
+    header .nav-item{
+        font-size: 10px;
+    }
+
+    header h1{
+        text-align: center;
     }
     
 }
