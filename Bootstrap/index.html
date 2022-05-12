@@ -48,7 +48,34 @@
                     <p>Atualmente possui mais de 100 lojas em 13 estados e cada unidade da rede tem cerca de 1.000 m². Geralmente as unidades são compostas de loja, centro de veterinária e banho e tosa. Em 2017 recebeu o prêmio Época Reclame Aqui de melhor atendimento em e-commerce pet e Zimerman escolhido o empresário do ano em 2018.Em Setembro de 2020 passou a ter suas ações (PETS3) negociadas na B3, já no primeiro dia de negociações, as ações tiveram uma valorização de 21,82%</p>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="./images/logopets.jpg" alt="Imagem Exemplo" class="img-fluid">
+                    <div class="container">
+
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/logopets.jpg" class="d-block w-100" alt="...">
+                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/roedor.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/coelho.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/cao.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                      </div>
+                    </div> 
                 </div>
 
             </div>
@@ -154,7 +181,8 @@
                         </div>
                         
                         <button type="submit" class="btn btn-success">Solicitar</button>
-
+                        
+                        <p> <a href="./cadastro.html">Cadastre-se</a> para receber novidades</p>
                     </form>
                 </div>
             </div>
@@ -473,6 +501,12 @@
 
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/validacao.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleControls')
+        var carousel = new bootstrap.Carousel(myCarousel,{
+            interval: 5000
+        }) 
+    </script>
 
 </body>
 </html>

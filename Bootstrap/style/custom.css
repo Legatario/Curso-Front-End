@@ -60,3 +60,11 @@ textarea{
     }
     
 }
+
+.form small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
