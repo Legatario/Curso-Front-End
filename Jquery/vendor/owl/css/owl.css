@@ -184,3 +184,13 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  .owl-carousel .owl-item {
+
+    min-width: 121px !important; 
+    -webkit-backface-visibility: hidden;
+  }
+
+  .owl-stage{
+    min-width: 1210px !important; 
+  }

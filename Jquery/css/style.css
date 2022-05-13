@@ -738,3 +738,15 @@ a {
 	} 
 
 }
+
+@media (min-width: 787px) {
+
+	.featured-item span{
+		margin-left: 10px;
+	  }
+
+	  .featured-item .btn{
+		margin-top: 15px;
+	  }  
+
+}
