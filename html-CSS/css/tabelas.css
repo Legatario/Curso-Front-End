@@ -64,3 +64,28 @@ table tr td:first-child {
 }
 
 
+@media (max-width: 767px) {
+	
+	section{
+		display: block;
+	}
+
+	section nav{
+		width: 100%;
+	}
+
+	.table-container{
+
+		display: block;
+		position: relative;
+		max-width: 100%;
+			width: auto;
+			position: relative;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			white-space: nowrap;
+		}
+
+
+	}
+	
