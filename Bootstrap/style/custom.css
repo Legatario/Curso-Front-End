@@ -4,6 +4,7 @@ header{
 
 header h1{
     color: #07447a;
+    text-align: center;
 }
 
 h2, h5{
@@ -45,8 +46,19 @@ textarea{
         width: 100%;
         height: auto;
     }
+
+    .banner{
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    header .nav-item{
+        font-size: 15px;
+    }
+
     
 }
+
 
 
 @media (max-width: 415px) {
