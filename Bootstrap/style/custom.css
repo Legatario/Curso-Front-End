@@ -70,6 +70,9 @@ textarea{
     header h1{
         text-align: center;
     }
+    .form-check label{
+        font-size: small;
+    }
     
 }
 
@@ -79,4 +82,13 @@ textarea{
     margin-top: 5px;
     font-size: 14px;
 
+}
+
+.p{
+    margin-top: 10px;
+}
+
+.form-check{
+
+    padding-left: 0;
 }
