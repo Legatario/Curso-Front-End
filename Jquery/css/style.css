@@ -739,7 +739,7 @@ a {
 
 }
 
-@media (min-width: 787px) {
+@media (min-width: 760px) {
 
 	.featured-item span{
 		margin-left: 10px;
@@ -750,3 +750,11 @@ a {
 	  }  
 
 }
+
+.featured-item h4{
+	margin-right: 10px;
+  }
+
+  .featured-item .btn{
+	margin-top: 15px;
+  }
