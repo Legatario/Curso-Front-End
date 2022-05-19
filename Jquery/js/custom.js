@@ -24,23 +24,46 @@ $(document).ready(function(){
 
         alert('Produto esgotado');
     })
+
+    // ouvinte de elementos
+    
+    $('.nav-modal-open').on('click', function(e){
+
+        e.preventDefault();
+
+        let elem = $(this).attr('rel')
+
+        $('.modal-body').html($('#'+elem).html())
+        $('.modal-header h5.modal-title').html($(this).text())
+
+        let myModal = new bootstrap.Modal($('#modelId'))
+
+        myModal.show()
+    })
+
+
+    function validade(elem){
+
+        if(elem.val()==''){
+    
+            console.log('o campo de '+elem.attr('name')+'é obrigatorio')
+            elem.parent().find('.text-muted').show()
+            elem.addClass('invalid')
+    
+            return false
+        }
+        else{
+            elem.parent().find('text-muted').hide()
+            elem.removeClass('invalid')
+        }
+    }
+
+
+    
+
 })
 
-function validade(elem){
 
-    if(elem.val()==''){
-
-        console.log('o campo de '+elem.attr('name')+'é obrigatorio')
-        elem.parent().find('.text-muted').show()
-        elem.addClass('invalid')
-
-        return false
-    }
-    else{
-        elem.parent().find('text-muted').hide()
-        elem.removeClass('invalid')
-    }
-}
 
 jQuery(function($){
 
@@ -49,3 +72,6 @@ jQuery(function($){
     let destaques = $('#featured')
 
 })
+
+
+    
