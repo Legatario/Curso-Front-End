@@ -26,6 +26,22 @@ $(document).ready(function(){
     })
 })
 
+function validade(elem){
+
+    if(elem.val()==''){
+
+        console.log('o campo de '+elem.attr('name')+'é obrigatorio')
+        elem.parent().find('.text-muted').show()
+        elem.addClass('invalid')
+
+        return false
+    }
+    else{
+        elem.parent().find('text-muted').hide()
+        elem.removeClass('invalid')
+    }
+}
+
 jQuery(function($){
 
     let titulos = $('h4')

@@ -29,10 +29,10 @@
                         <a class="nav-link" href="#top">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#top">Sobre nós</a>
+                        <a class="nav-link" href="#top" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#top">Contato</a>
+                        <a class="nav-link" href="#top" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -174,6 +174,49 @@
             </div>
         </div>
     </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label"></label>
+      <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="email">
+      <small id="emailHelpId" class="form-text text-muted">Digite um email</small>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+      Launch
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contato" class="visually-hidden">
+       <form action="" class="form">
+           <div class="mb-3">
+             <label for="nome" class="form-label">Nome</label>
+             <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+             <small id="helpId" class="text-muted">Digite um nome valido</small>
+
+           </div>
+       </form>
+    </div>
+    
     
     <div class="sub-footer">
         <div class="container">
