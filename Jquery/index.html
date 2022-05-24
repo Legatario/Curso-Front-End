@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/bootstrap/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>jQuery</title>
 </head>
@@ -206,8 +208,34 @@
            <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpemail">
-            <small id="helpNome" class="text-muted">Digite um email valido</small>
+            <small id="helpemail" class="text-muted">Digite um email valido</small>
           </div>
+
+            <div class="mb-3">
+            <label for="date" class="form-label">Data de Nascimento</label>
+            <input type="date" name="date" id="date" class="form-control" placeholder="Digite a data" aria-describedby="helpdate">
+            <small id="helpdata" class="text-muted">Digite a sua data de nascimento</small>
+            </div>
+
+        
+            <div class="mb-3">
+            <label for="cep" class="form-label">Cep</label>
+            <input type="cep" name="cep" id="cep" class="form-control" placeholder="Digite a data" aria-describedby="helpcep">
+            <small id="helpcep" class="text-muted">Digite um cep valido</small>
+            </div>
+
+        
+            <div class="mb-3">
+            <label for="phone" class="form-label">Celular</label>
+            <input type="phone" name="phone" id="phone" class="form-control" placeholder="Digite o numero do celular" aria-describedby="helpPhone">
+            <small id="helpPhone" class="text-muted">Digite um telefone valido</small>
+            </div>
+
+            <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="cpf" name="cpf" id="cpf" class="form-control" placeholder="Digite o seu cpf" aria-describedby="helpPhone">
+            <small id="helpPhone" class="text-muted">Digite um CPF valido</small>
+            </div>
 
           <button type="submit" class="btn btn-primary">Enviar</button>
        </form>
@@ -241,6 +269,10 @@
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+        <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+
         <script src="./js/custom.js"></script>
+
     </body>
     </html>
