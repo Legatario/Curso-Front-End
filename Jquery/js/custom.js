@@ -120,10 +120,6 @@ $(document).ready(function(){
 
     })
 
-    $('body').on('focus', '#date', function(){
-
-        $(this).datepicker()
-    })
 
     $('body').on('blur', '#date', function(){
 
