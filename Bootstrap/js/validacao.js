@@ -40,6 +40,7 @@ for ( const field of fields) {
 
 document.querySelector("form").addEventListener("submit",event =>{
 
+    alert("mensagem enviada")
     event.preventDefault()
 })
 
