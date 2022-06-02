@@ -6,7 +6,7 @@ const uglify = require('gulp-uglify')
 
 function tarefasCSS(cb){
 
-    return gulp.src('./vendor/**/*.css')
+    return gulp.src('./vendor/**/*.css' )
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'})) //libs.min.css
@@ -16,7 +16,12 @@ function tarefasCSS(cb){
 
 function tarefasJS(){
 
-    return gulp.src('./vendor/**/*.js')
+    return gulp.src(['./vendor/jquery/jquery-3.6.0.min.js',
+                    './vendor/bootstrap/js/bootstrap.min.js',
+                    './vendor/owl/js/owl.js',
+                    './vendor/jquery-mask/jquery.mask.min.js',
+                    './vendor/jquery-ui/jquery-ui.min.js'
+                    ])
             .pipe(concat('libs.js'))
             .pipe(uglify())
             .pipe(rename({suffix: '.min'}))
