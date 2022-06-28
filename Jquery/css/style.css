@@ -751,6 +751,21 @@ a {
 
 }
 
+@media (max-width: 400px) {
+
+	.navbar .navbar-brand {
+		width: 40%;
+	}
+
+	.navbar-brand img{
+		width: 150%;
+	}
+
+	span{
+		margin-left: 5px;
+	}
+}	  
+
 .featured-item h4{
 	margin-right: 10px;
   }

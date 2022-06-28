@@ -66,6 +66,7 @@ $(document).ready(function(){
         const name = $('#nome')
         const email = $('#email')
 
+
         validade(name)
         validade(email)
 
@@ -76,10 +77,14 @@ $(document).ready(function(){
         }
 
         else {
-            $(this).submit()
 
+            
+            // modal(hide)
+            alert('cadastro realizado');
+            // $(this).submit()
             return true
         }
+
 
    
     })
