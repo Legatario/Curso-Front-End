@@ -78,13 +78,16 @@ $(document).ready(function(){
 
         else {
 
-            
-            // modal(hide)
-            alert('cadastro realizado');
-            // $(this).submit()
-            return true
-        }
 
+            $('#modelId').removeClass('show');
+            $('body').removeClass("modal-open");
+            $("body").removeAttr("style");
+            $('.modal-backdrop').remove();
+
+            // return true
+            alert('cadastro realizado');
+        }
+        
 
    
     })
