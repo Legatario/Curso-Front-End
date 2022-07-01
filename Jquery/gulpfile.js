@@ -6,7 +6,8 @@ const uglify = require('gulp-uglify')
 
 function tarefasCSS(cb){
 
-    return gulp.src('./vendor/**/*.css' )
+    return gulp.src(['./vendor/**/*.css',
+                      './css/style.css'])
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'})) //libs.min.css
@@ -20,7 +21,8 @@ function tarefasJS(){
                     './vendor/bootstrap/js/bootstrap.min.js',
                     './vendor/owl/js/owl.js',
                     './vendor/jquery-mask/jquery.mask.min.js',
-                    './vendor/jquery-ui/jquery-ui.min.js'
+                    './vendor/jquery-ui/jquery-ui.min.js',
+                    './js/custom.js'
                     ])
             .pipe(concat('libs.js'))
             .pipe(uglify())
@@ -28,6 +30,12 @@ function tarefasJS(){
             .pipe(gulp.dest('./dist/js'))
 }
 
+function tarefasImagem(){
+    
+    return gulp.src('./src/images/*')
+        .pipe(gulp.dest('./dist/images'))
+}
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
+exports.images = tarefasImagem
