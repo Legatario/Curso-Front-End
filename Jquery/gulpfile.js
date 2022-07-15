@@ -7,7 +7,9 @@ const uglify = require('gulp-uglify')
 function tarefasCSS(cb){
 
     return gulp.src(['./vendor/**/*.css',
-                      './css/style.css'])
+                      './css/style.css',
+                      './node_modules/@fortawesome/fontawesome-free/css/all.css',
+                      './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css'])
         .pipe(concat('libs.css'))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'})) //libs.min.css
@@ -36,6 +38,14 @@ function tarefasImagem(){
         .pipe(gulp.dest('./dist/images'))
 }
 
+function tarefasdefault(){
+    return  tarefasCSS(),
+            tarefasJS(),
+            tarefasImagem()
+
+}
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.default = tarefasdefault

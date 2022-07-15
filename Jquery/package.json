@@ -15,9 +15,11 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "bootstrap": "^5.1.3",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "node-modules": "^1.0.1"
   }
 }
