@@ -1,11 +1,13 @@
-const {parallel} = require('gulp')
+const {series, parallel} = require('gulp')
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const htmlmin = require('gulp-htmlmin')
-const babel = require('gulp-babel') 
+const babel = require('gulp-babel')
+const browserSyn = require('browser-sync').create()
+const reload = browserSyn.reload 
 
 function tarefasCSS(callback){
 
@@ -26,8 +28,8 @@ function tarefasJS(callback){
      gulp.src(['./vendor/jquery/jquery-3.6.0.min.js',
                     './vendor/bootstrap/js/bootstrap.min.js',
                     './vendor/owl/js/owl.js',
-                    './vendor/jquery-mask/jquery.mask.min.js',
-                    './vendor/jquery-ui/jquery-ui.min.js',
+                    // './vendor/jquery-mask/jquery.mask.min.js',
+                    // './vendor/jquery-ui/jquery-ui.min.js',
                     './js/custom.js'
                     ])
             .pipe(babel({
@@ -68,10 +70,21 @@ function tarefasdefault(){
 
 }
 
+gulp.task('serve', function(){
+    browserSyn.init({
+        server:{
+            baseDir:"./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process)
+    gulp.watch('./src/**/*').on('change', reload)
+})
+
+const process = parallel(tarefasHTML, tarefasJS, tarefasCSS)
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
 exports.html = tarefasHTML
 
-
-exports.default = parallel(tarefasHTML, tarefasJS, tarefasCSS)
+exports.default = process
