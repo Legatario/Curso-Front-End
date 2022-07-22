@@ -11,7 +11,7 @@
         font-size: $font-small;
         display: flex;
         justify-content: space-between;
-        height: 250px;
+        height: auto;
         padding: 1rem 0;
         width: 100%;
     }
@@ -24,9 +24,8 @@
         
         .img-container {
             display: block;
-            height: 200px;
-            overflow: hidden;
             width: 100%;
+            
         }
 
         a {
