@@ -47,3 +47,7 @@ sass ./scss/style.scss ./css/style.css
 7. salvar alterações
 8. comitar no seu repositório
 9. enviar o link do repositório para o portal da EBAC
+
+## Antes de rodar o codigo usar
+
+sass ./scss/style.scss ./css/style.css
