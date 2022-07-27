@@ -10,12 +10,15 @@
     }
     h2 {
         font-size: $font-small;
-        margin-top: $mt;
     }
     img {
         width: 60%;
         height: auto;
         margin: $space-default auto;
+
+        @media (max-width: $break-mobile){
+            width: 100%;
+        }
     }
     p {
         font-size: $font-normal;

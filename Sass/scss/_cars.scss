@@ -10,6 +10,7 @@
     @extend %blocks;
     h2 {
         color: $color-03;
+        padding-left: $mt;
     }
 
     .destacks{
