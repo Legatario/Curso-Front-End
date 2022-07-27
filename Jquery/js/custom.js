@@ -66,6 +66,7 @@ $(document).ready(function(){
         const name = $('#nome')
         const email = $('#email')
 
+
         validade(name)
         validade(email)
 
@@ -76,10 +77,17 @@ $(document).ready(function(){
         }
 
         else {
-            $(this).submit()
 
-            return true
+
+            $('#modelId').removeClass('show');
+            $('body').removeClass("modal-open");
+            $("body").removeAttr("style");
+            $('.modal-backdrop').remove();
+
+            // return true
+            alert('cadastro realizado');
         }
+        
 
    
     })
@@ -175,6 +183,3 @@ jQuery(function($){
     let destaques = $('#featured')
 
 })
-
-
-    
