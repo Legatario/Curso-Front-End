@@ -5,6 +5,7 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const htmlmin = require('gulp-htmlmin')
+const sass = require('gulp-sass')(require('node-sass'))
 const babel = require('gulp-babel')
 const browserSyn = require('browser-sync').create()
 const reload = browserSyn.reload 
@@ -12,7 +13,6 @@ const reload = browserSyn.reload
 function tarefasCSS(callback){
 
      gulp.src(['./vendor/**/*.css',
-                      './css/style.css',
                       './node_modules/@fortawesome/fontawesome-free/css/all.css',
                       './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css'])             
         .pipe(concat('libs.css'))
@@ -23,6 +23,15 @@ function tarefasCSS(callback){
         return callback()
 }
 
+function tarefasSASS(cb){
+
+    gulp.src('./src/scss/*.scss')
+    .pipe(sass()) //transforma o sass em css
+    .pipe(gulp.dest('./dist/css'))
+
+    cb()
+}
+
 function tarefasJS(callback){
 
      gulp.src(['./vendor/jquery/jquery-3.6.0.min.js',
@@ -30,7 +39,7 @@ function tarefasJS(callback){
                     './vendor/owl/js/owl.js',
                     // './vendor/jquery-mask/jquery.mask.min.js',
                     // './vendor/jquery-ui/jquery-ui.min.js',
-                    './js/custom.js'
+                    './src/js/custom.js'
                     ])
             .pipe(babel({
                 comments: false,
@@ -80,11 +89,12 @@ gulp.task('serve', function(){
     gulp.watch('./src/**/*').on('change', reload)
 })
 
-const process = parallel(tarefasHTML, tarefasJS, tarefasCSS)
+const process = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
 exports.html = tarefasHTML
+exports.sass = tarefasSASS
 
 exports.default = process
