@@ -89,7 +89,7 @@ gulp.task('serve', function(){
     gulp.watch('./src/**/*').on('change', reload)
 })
 
-const process = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS)
+const process = parallel(tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, tarefasImagem)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
