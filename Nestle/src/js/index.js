@@ -3,6 +3,8 @@ import 'bootstrap'
 import imageBuilding from '../assets/building.jpg'
 import imageNotebook from '../assets/notebook.jpg'
 
+
+
 const elemRoot = document.getElementById('root')
 elemRoot.classList.add('container')
 
@@ -17,3 +19,4 @@ document.querySelector('#building')
 
 document.querySelector('#notebook')
     .appendChild(elemImageNotebook)
+
