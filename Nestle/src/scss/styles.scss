@@ -1,0 +1,23 @@
+$color-font: #33d ;
+$color-bg-default: #fff;
+$color-bg-boxes: #FD3;
+$font-default: Arial, Helvetica, sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-bg-default;
+    font-family: $font-default;
+}
+
+h1 {
+    color: $color-font;
+    margin-top: 4rem;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
