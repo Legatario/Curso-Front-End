@@ -1,4 +1,5 @@
 import '../scss/styles.scss'
+import 'bootstrap'
 import imageBuilding from '../assets/building.jpg'
 import imageNotebook from '../assets/notebook.jpg'
 

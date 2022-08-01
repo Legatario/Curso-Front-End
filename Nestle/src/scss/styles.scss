@@ -1,5 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+
+
 $color-font: #33d ;
 $color-bg-default: #fff;
+$color-01: #30261D;
 $color-bg-boxes: #FD3;
 $font-default: Arial, Helvetica, sans-serif;
 
@@ -21,3 +25,42 @@ h2 {
     margin-top: 4rem;
 }
 
+    .banner{
+        img{
+            width: 100%;
+        }
+
+    }
+
+.header{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 32px;
+        margin-top: 32px;
+
+        form{
+            max-height: 25px;
+            input{
+                border: none;
+                border-bottom: 1px solid $color-01;
+                color: $color-01;
+                border-radius: 0;
+                width: 320px;
+                font-size: 16px;
+                padding: 11px 33px 11px 9px;
+                color: $color-01;
+                &:focus{
+                    outline: 0;
+                }
+            }
+            button{
+                border: none;
+                border-bottom: 1px solid $color-01;
+                border-radius: 0;
+                color: $color-01;
+            }
+        }
+    }
+}

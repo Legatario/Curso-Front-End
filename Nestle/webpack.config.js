@@ -24,7 +24,8 @@ module.exports = {
                 test: /\.css$/i,
                 use: [
                     'style-loader',
-                    'css-loader'
+                    'css-loader',
+                    'postcss-loader'
                 ]
             },
             {
@@ -46,6 +47,7 @@ module.exports = {
                     }
                 }
             },
+            
             {
                 test: /\.html$/i,
                 loader: "html-loader",
