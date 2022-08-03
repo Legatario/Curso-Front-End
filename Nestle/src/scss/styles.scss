@@ -15,7 +15,8 @@ $color-e: #2E8025;
 $color-r: #6f2277;
 $color-bg-boxes: #FD3;
 $font-default: Arial, Helvetica, sans-serif;
-$br-mobile: 992px;
+$br-mobile: 600px;
+$br-tablet: 992px;
 
 html {
     font-size: 62.5%;
@@ -68,7 +69,7 @@ h2 {
             padding: 11px 33px 11px 9px;
             max-height: 25px;
             width: 320px;
-            @media (max-width: $br-mobile){
+            @media (max-width: $br-tablet){
                 display: none;
             }
             &:focus{
@@ -126,9 +127,16 @@ h2 {
         margin: 100px 100px 100px 100px;
         width: 100%;
 
-        @media(max-width: $br-mobile){
+        @media(max-width: $br-tablet){
             grid-template-columns: 1fr 1fr;
             margin: 50px 10px 50px 10px;
+            
+        }
+
+        @media(max-width: $br-mobile){
+            grid-template-columns: 1fr;
+            justify-items: center;
+           
             
         }
 
@@ -141,6 +149,7 @@ h2 {
             flex-direction: column;
             margin-left: 20px;
             margin-bottom: 20px;
+            max-width: 480px;
             box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.116);
             transition: box-shadow 0.1s;
 
@@ -220,10 +229,25 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0 144px;
+        @media(max-width: $br-tablet){
+            margin: 0 10px;
+        }
+        @media(max-width: $br-mobile){
+           display: flex;
+           flex-direction: column;
+        }
+
         &__title{
             color: #fff;
             font-size: 40px;
             margin: 0;
+            @media(max-width: $br-tablet){
+                font-size: 36px;
+            }
+            @media(max-width: $br-mobile){
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
         }
         a{
             border: 1px solid #fff;
@@ -232,10 +256,14 @@ h2 {
             margin:  0 4px 14px 0;
             padding: 7px 18px;
             text-decoration: none;
+            
         }
         .views-container{
             font-size: 16px;
             padding: 0 70px 16px 0;
+            @media(max-width: $br-tablet){
+                padding: 0 50px 16px 0;
+            }
             &__second{
                 grid-column: 2; 
             }
@@ -247,6 +275,14 @@ h2 {
                 border-bottom: 1px solid #d1cbc5;
                 min-height: 100px;
                 padding-bottom: 20px;
+
+                @media(max-width: $br-tablet){
+                    min-height: 220px;
+                }
+
+                @media(max-width: $br-mobile){
+                    min-height: auto;
+                }
             }
         }
 
@@ -293,7 +329,7 @@ h2 {
                     filter: opacity(75%) grayscale(100%);
                     filter: brightness(50%);
                     transition: all 1s;
-                    animation-name: slideIn;
+                    animation-name: slideUp;
                     animation-duration: 1s;
                     
         
@@ -324,7 +360,7 @@ h2 {
 }
 //animação
 
-@keyframes slideIn {
+@keyframes slideUp {
     from {
         margin-top: 0px;
     }
@@ -351,6 +387,12 @@ h2 {
         margin-right: auto;
         padding: 38px 0 38px;
         position: relative;
+        @media (max-width: $br-mobile){
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__image{
@@ -359,6 +401,10 @@ h2 {
         display: flex;
         justify-content: center;
         margin: 0 20px;
+
+        @media(max-width: $br-mobile){
+        margin: 20px 20px;
+        }
         img{
             width: 80%;
             opacity: 0.5;
@@ -366,6 +412,9 @@ h2 {
     }
 
     .field{
+        @media(max-width: $br-tablet){
+            margin: 0 10px;
+        }
 
         &__title{
             font-size: 21px;
@@ -393,6 +442,7 @@ h2 {
             margin: 0 4px 28px 0px;
             padding: 7px 15px 7px 18px;
             text-decoration: none;
+            white-space: nowrap;
 
             &:hover{
                 background: #cce5f1;
@@ -409,6 +459,7 @@ h2 {
             margin: 0 4px 28px 0px;
             padding: 7px 15px 7px 18px;
             text-decoration: none;
+            white-space: nowrap;
 
             &:hover{
                 background: rgba(0,0,0,0.15);
@@ -428,6 +479,11 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    header{
+        @media(max-width: $br-mobile){
+            margin-left: 10px ;
+        }
+    }
 
     &__title{
         color: $color-04;
@@ -447,4 +503,162 @@ h2 {
         max-width: 92px;
         margin-bottom: 32px;
     }
+
+    .nav{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            color: $color-04;
+            font-size: 16px;
+            margin: 0 0px 8px;
+            padding: 3px 0 0;
+            border-top: 1px solid $color-04;
+            max-width: 150px;
+            text-transform: uppercase;
+        }
+        //carreiras
+        ul{
+            padding: 0;
+            li{
+                color: $color-04;
+                font-size: 14px;
+                padding: 0 0 14px;
+                list-style-type: none;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .social{
+
+        align-content: center;
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-content: center;
+        width: 100%;
+
+        &__title{
+            font-size: 26px;
+            color: $color-04;
+            margin: 0 0 19px;
+        }
+    }
+
+//contatos
+    #contact{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 25px;
+        @media(max-width: $br-mobile){
+            min-width: 85%;
+        }
+        
+        .title{
+            font-size: 24px;
+            color: $color-04;
+            margin: 0 0 19px;
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            min-width: 350px;
+            &__input{
+                margin: 0 0 8px;
+                font-size: 16px;
+                color: $color-04;
+                &:focus{
+                    outline: none !important;
+                    border: 2px solid $color-04;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px $color-04;
+
+                }
+                &::placeholder{
+                    color: $color-04;
+                }
+            }
+
+            &__button{
+                border: 1px solid $color-04;
+                color: $color-04;
+                font-size: 16px;
+               
+
+                &:hover{
+                    color: $color-bg-default;
+                    background: $color-04;
+                    border-color: $color-bg-default;
+                }
+
+            }
+        }
+    }
+}
+
+//sub-footer
+.sub-footer{
+    padding: 12px 0 13px;
+    background: $color-bg-default;
+
+   &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-04;
+    font-size: 13px;
+
+    @media(max-width: $br-tablet){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 85%;
+       
+    }
+    @media(max-width: $br-mobile){
+
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+        &--item{
+            list-style-type: none;
+            padding: 0 19px 0 7px;
+            border-right: solid 1px $color-04;
+
+            @media(max-width: $br-tablet){
+                border-top: solid 1px $color-04;
+                border-right: none;
+                border-collapse: collapse;
+                min-width: 200px;
+                text-align: center;
+                
+            }
+
+        }
+
+        &--last{
+            list-style-type: none;
+            padding: 0 19px 0 7px;
+
+            @media(max-width: $br-tablet){
+                border-top: solid 1px $color-04;
+                min-width: 200px;
+                text-align: center;
+            }
+        }
+    }
+
 }
