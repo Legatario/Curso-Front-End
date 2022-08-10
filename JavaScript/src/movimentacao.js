@@ -47,3 +47,9 @@ const m05 = new Mov('Banc x', 'imposto', -500)
 const registro01 = new Registro(22,10,2021)
 registro01.novaMov(m01, m02, m03, m04, m05)
 console.log('o saldo foi de ' + registro01.resumo());
+
+const movGerais = [m01, m02, m03, m04, m05];
+
+movGerais.map(elemento => {
+    console.log(elemento.banco.length)
+})
