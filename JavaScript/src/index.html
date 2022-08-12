@@ -8,6 +8,36 @@
 </head>
 <body>
     <div id="main"></div>
-    <script src="./exams.js" type="module"></script>
+    <div id="app">{{ message }}
+        </br>Meu nome é {{ nome }}
+        <br>
+        <span v-bind:title= "message2">
+            {{ message2 }}
+            <br> Houver your mouse me for a few seconds to see my dynamucally bound title! 
+        </span>
+        <br>
+        <button @click="count++">
+            Count is: {{ count }}
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue
+      
+        createApp({
+          data() {
+            return {
+              message: 'Hello Vue!',
+              nome: 'Luís Phillipe',
+              message2: 'You loaded this page on ' + new Date().toLocaleString(),
+              count: 0
+            }
+          }
+        }).mount('#app')
+      </script>
+
+      
+    <!-- <script src="./exams.js" type="module"></script> -->
 </body>
 </html>

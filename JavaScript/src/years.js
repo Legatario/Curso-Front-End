@@ -1,68 +1,56 @@
 let months = [
-    {   
-        month: 'Janeiro',
-        color: 'amarelo',
+    { month: "Janeiro",
+        color: "amarelo",
         days: 31
     },
-    { 
-        month: 'Fevereiro',
-        color: 'roxo',
+    {   month: "Fevereiro",
+        color: "roxo",
         days: 28
     },
-    { 
-        month: 'Março',
-        color: 'verde',
+    {   month: "Março",
+        color: "verde",
         days: 31
     },
-    { 
-        month: 'Abril',
-        color: 'beje',
+    {   month: "Abril",
+        color: "beje",
         days: 30
     },
-    { 
-        month: 'Maio',
-        color: 'vermelho',
+    {   month: "Maio",
+        color: "vermelho",
         days: 31
     },
-    { 
-        month: 'Junho',
-        color: 'marron',
+    {   month: "Junho",
+        color: "marron",
         days: 30
     },
-    { 
-        month: 'Julho',
-        color: 'laranja',
+    {   month: "Julho",
+        color: "laranja",
         days: 31
     },
-    { 
-        month: 'Agosto',
-        color: 'cinza',
+    {   month: "Agosto",
+        color: "cinza",
         days: 31
     },
-    { 
-        month: 'Setembro',
-        color: '',
+    {   month: "Setembro",
+        color: "amarelo",
         days: 30
     },
-    { 
-        month: 'Outubro',
-        color: 'azul',
+    {   month: "Outubro",
+        color: "azul",
         days: 31
     },
-    { 
-        month: 'Novembro',
-        color: 'rosa',
+    {   month: "Novembro",
+        color: "rosa",
         days: 30
     },
-    {
-        month: 'Dezembro',
-        color: 'branco',
+    {   month: "Dezembro",
+        color: "branco",
         days: 31
     }
-]
+];
 
-function getMonths(){
-    return months
+function getMonths() {
+    return months;
 }
 
-export default getMonths()
+export default getMonths();
