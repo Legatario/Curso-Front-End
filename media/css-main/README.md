@@ -1,4 +1,4 @@
-# CSS
+# SCSS
 ## Posicionamento (display)
 - block
 - inline
@@ -6,8 +6,7 @@
 - grid
 
 ## Alinhamento
-- flex: justify-content (horizontal) 
-- flex: align-item (vertical)
+- flex: 
 - grid: 
 
 ## Direção
