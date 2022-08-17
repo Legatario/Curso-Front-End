@@ -1,6 +1,7 @@
 const login = document.getElementById('login')
 const mensagem = document.getElementById('mensagem');
 const error = document.getElementById('error');
+const cadastro = document.querySelector('.cadastro');
 
 let call = []
 fetch('https://jsonplaceholder.typicode.com/users', {
@@ -55,6 +56,7 @@ function validacion(userName, email){
     }else{
         console.log("userName invalido");
         mensagem.innerHTML = `User Name não encontrado`;
+        cadastro.style.display = 'block'
     }
 
     if(checkEmail == email && email != ''){
@@ -64,6 +66,7 @@ function validacion(userName, email){
         window.location.href = "https://i.pinimg.com/564x/a6/fc/47/a6fc47cc2f552cac672118a6ebb6907f.jpg";
     }else{
         console.log("email invalido");
-        error.innerHTML = `Email não encontrado`;
+        error.innerHTML = `E-mail não encontrado`;
+        cadastro.style.display = 'block'
     }
 }
