@@ -31,6 +31,14 @@ h2 {
         max-width: 100%;
         margin: 0 auto;
 
+        @media(max-width:800px){
+            justify-content: space-around;
+        }
+
+        @media(max-width: 600px){
+            justify-content: center;
+        }
+
         img {
             max-height: 400px;
             width: auto;
@@ -38,6 +46,17 @@ h2 {
             object-fit: fill;
             object-position: bottom;
             border: 1px solid rgb(189, 185, 185);
+
+            @media(max-width:800px){
+                height: 400px;
+                width: 48%;
+            }
+
+            @media(max-width: 600px){
+                height: auto;
+                width: 80%;
+                
+            }
 
             &:hover{
                 opacity: 75%;
@@ -61,6 +80,10 @@ header{
         z-index: 9;
         color: $color-bg-default;
         
+    }
+
+    svg{
+        min-height: 100%;
     }
 }
 
