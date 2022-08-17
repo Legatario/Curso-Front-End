@@ -55,6 +55,7 @@ form.addEventListener('submit', function(event){
     
     Array.from(notNull).forEach(element => {
         let fieldState = isEmpty(element);
+        if(fieldState != '' )
         msg.push(fieldState)
             
     });
@@ -74,14 +75,21 @@ form.addEventListener('submit', function(event){
     }
 
     msg.forEach(item => {
-        if(item != '')
-        markup += `<p>${item}</p>`
+        if(item != ''){
+            markup += `<p>${item}</p>`
+        }
     });
 
 
     mensagem.innerHTML = markup;
    
-    // if(msg.length == 0) form.submit();
+   
+    if(msg.length == 0){
+        setTimeout(function () {
+            alert('Cadastro Realizado com sucesso');        
+        }, 250);
+    }
+
 })
 
 
