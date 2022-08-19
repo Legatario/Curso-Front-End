@@ -84,9 +84,10 @@ form.addEventListener('submit', function(event){
     mensagem.innerHTML = markup;
    
    
-    if(msg.length == 0){
+    if(msg.length == 0 && call == true){
         setTimeout(function () {
-            alert('Cadastro Realizado com sucesso');        
+            alert('Cadastro Realizado com sucesso');
+            form.reset()              
         }, 250);
     }
 
