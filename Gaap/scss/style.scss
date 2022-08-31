@@ -100,12 +100,13 @@ header{
         margin: 48px 30px;
         color: $color-default;
         height: auto;
+        width: 100%;
         &__title{
             font-size: 26px;
         }
         &__text{
             font-size: 16px;
-            max-width: 300px;
+            max-width: 90%;
         }
         .footerBanner{
             position: absolute;

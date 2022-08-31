@@ -17,11 +17,11 @@
                 </div>
                 <div class="menu">
                     <ul class="menu__lista">
-                        <li class="menu__lista--home"> <a href="#">Home</a> </li>
-                        <li class="menu__lista--item"> <a href="#">Quem somos</a> </li>
-                        <li class="menu__lista--item"> <a href="#">Produtos e serviços</a> </li>
-                        <li class="menu__lista--item"> <a href="#">Aplicações</a> </li>
-                        <li class="menu__lista--item"> <a href="#">Fale conosco</a> </li>
+                        <li class="menu__lista--home"> <a href="#top">Home</a> </li>
+                        <li class="menu__lista--item"> <a href="#top">Quem somos</a> </li>
+                        <li class="menu__lista--item"> <a href="#top">Produtos e serviços</a> </li>
+                        <li class="menu__lista--item"> <a href="#top">Aplicações</a> </li>
+                        <li class="menu__lista--item"> <a href="#top">Fale conosco</a> </li>
                     </ul>
                 </div>
             </header>
@@ -32,17 +32,27 @@
                 <div class="triangulo col-7">
                 </div>
                 <div class="carrousel">
-                    <h2 class="carrousel__title">Ferramentaria</h2>
-                    <p class="carrousel__text">Fazemos usinagem em materiais ferrosos, não ferrosos, plásticos e elastômeros. Além da fabricação de diversas peças, todas customizadas para a necessidade do cliente, respeitando o desenhos ou </p>
+                    <div id="artigo1">
+                        <h2 class="carrousel__title">Ferramentaria</h2>
+                        <p class="carrousel__text">Fazemos usinagem em materiais ferrosos, não ferrosos, plásticos e elastômeros. Além da fabricação de diversas peças, todas customizadas para a necessidade do cliente, respeitando o desenhos ou amostras </p>
+                    </div>
+                    <div id="artigo2">
+                        <h2 class="carrousel__title">Solda</h2>
+                        <p class="carrousel__text">Trabalhamos com solda elétrica, MIGMAG e TIG, em peças e equipamentos produzidos em aço SAE e aço inox.</p>
+                    </div>
+                    <div id="artigo3">
+                        <h2 class="carrousel__title">Caldeiraria</h2>
+                        <p class="carrousel__text">Produzimos nossos equipamentos e produtos, fornecemos serviços de caldeiraria leve e pesada em aço SAE e aço inox para clientes de diversos segmentos.</p>
+                    </div>
                     <div class="footerBanner">
                         <div class="footerBanner__buttons">
                             <button class="previun"><</button>
                             <button class="next">></button>
                         </div>
                         <div class="footerBanner__circle">
-                            <div class="geo first"></div>
-                            <div class="geo mid"></div>
-                            <div class="geo"></div>
+                            <div class="geo first" id="c1"></div>
+                            <div class="geo mid" id="c2"></div>
+                            <div class="geo" id="c3"></div>
                         </div>
                     </div>
                 </div>
@@ -56,16 +66,16 @@
                     <div class="col-4">
                         <h2>Conheça a GAPP</h2>
                         <p>Nossa estrutura permite oferecer um serviço personalizado, qualidade excepcional e o fácil acesso do cliente a todas as etapas do processo, desde o projeto até o produto final.</p>
-                        <a href="#" class="btn-saiba-mais">Saiba mais<button class="more">></button></a>
+                        <a href="#top" class="btn-saiba-mais">Saiba mais<button class="more">></button></a>
                     </div>
                     <div class="col-4">
                         <h2>Produtos e Serviços</h2>
                         <p>Com máquinas modernas e instalações adequadas, a GAPP está preparada para atender as mais exigentes necessidades no setor da mecânica de precisão.</p>
-                        <a href="#" class="btn-saiba-mais">Saiba mais<button class="more">></button></a>
+                        <a href="#top" class="btn-saiba-mais">Saiba mais<button class="more">></button></a>
                     </div>
                     <div class="col-4">
                         <h2>Principais Aplicações</h2>
-                        <a href="#" class="video">
+                        <a href="#top" class="video">
                             <img src="./images/img-video.jpg" alt="video">
                         </a>
                     </div>
@@ -99,6 +109,6 @@
         </div>
     </footer>
     
-
+<script src="./js/index.js"></script>
 </body>
 </html>

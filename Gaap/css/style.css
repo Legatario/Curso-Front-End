@@ -92,13 +92,14 @@ header .menu__lista--home a {
   margin: 48px 30px;
   color: #fff;
   height: auto;
+  width: 100%;
 }
 #banner .carrousel__title {
   font-size: 26px;
 }
 #banner .carrousel__text {
   font-size: 16px;
-  max-width: 300px;
+  max-width: 90%;
 }
 #banner .carrousel .footerBanner {
   position: absolute;
