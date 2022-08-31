@@ -72,6 +72,7 @@ header .menu__lista--home a {
 }
 #banner .engrenagem img {
   width: 100%;
+  height: 100%;
 }
 #banner .triangulo {
   background: transparent;
@@ -93,6 +94,7 @@ header .menu__lista--home a {
   color: #fff;
   height: auto;
   width: 100%;
+  position: relative;
 }
 #banner .carrousel__title {
   font-size: 26px;
@@ -103,14 +105,14 @@ header .menu__lista--home a {
 }
 #banner .carrousel .footerBanner {
   position: absolute;
-  bottom: 48px;
+  bottom: 3px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 37%;
+  width: 74%;
 }
 #banner .carrousel .footerBanner__buttons button {
-  font-size: 25px;
+  font-size: 16px;
   background-color: #96001f;
   padding: 8px 14px;
   border: #96001f;
@@ -190,8 +192,6 @@ header .menu__lista--home a {
 
 footer {
   background: #e7e7e7;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 footer .footer {

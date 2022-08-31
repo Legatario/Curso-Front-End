@@ -77,7 +77,8 @@ header{
     position: relative;
     .engrenagem{
         img{
-            width: 100%
+            width: 100%;
+            height: 100%;
         }
     }
     .triangulo{
@@ -101,6 +102,7 @@ header{
         color: $color-default;
         height: auto;
         width: 100%;
+        position: relative;
         &__title{
             font-size: 26px;
         }
@@ -110,14 +112,14 @@ header{
         }
         .footerBanner{
             position: absolute;
-            bottom: 48px;
+            bottom: 3px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            width: 37%;
+            width: 74%;
             &__buttons{
                 button{
-                    font-size: 25px;
+                    font-size: 16px;
                     background-color: #96001f;
                     padding: 8px 14px;
                     border: #96001f;
@@ -202,9 +204,9 @@ header{
 
 footer{
     background: $cinza-foter;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    // position: absolute;
+    // bottom: 0;
     .footer{
         padding: 25px 25px 30px 25px;
         .information{
