@@ -47,7 +47,6 @@ header{
     background-color: #fff;
     display: block;
     float: left;
-    padding: 20px;
     width: 100%;
     border-bottom: 1px solid #254159;
 
@@ -209,8 +208,8 @@ footer small{
 
 @media (max-width: 425px) {
     section nav,
-    section article {
-        width: 100%;
+    section article{
+        width: 98%;
     }  
 
     .container {
@@ -218,6 +217,31 @@ footer small{
         padding-right: 1%;
     }
 }
+
+#tenho-interesse {
+
+    background-color: #c2d1df;
+    display: block;
+    float: left;
+}
+
+@media (min-width: 600px){
+#tenho-interesse {
+
+    background-color: #c2d1df;
+    width: 95%;
+    display: block;
+    float: left;
+}
+}
+
+@media (min-width: 1024px){
+    #tenho-interesse {
+
+        width: 97%;
+
+    }
+}       
 
 #tenho-interesse {
 
@@ -340,4 +364,12 @@ dd{
     .cheio{
         width: 97%;
     }
+
 }
+
+.Ficou{
+    float: right;
+}
+
+}
+

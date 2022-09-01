@@ -45,28 +45,11 @@ table tr td:first-child {
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
-/* table th {
-} */
->>>>>>> 2a6f784ff94f35ec00f7bba4419a0cc1b9384cae
+
 
 .table-container {
 	padding: 3rem 2rem;
 }
 
-<<<<<<< HEAD
-=======
-/* .table-container h3 {
-} */
->>>>>>> 2a6f784ff94f35ec00f7bba4419a0cc1b9384cae
-
-.table-container tfoot {
-	background: rgba(14, 247, 6, .4);
-}
-
-.table-container tfoot td {
-	font-weight: bold;
-}
 
 
