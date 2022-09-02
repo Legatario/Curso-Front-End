@@ -47,7 +47,6 @@ header{
     background-color: #fff;
     display: block;
     float: left;
-    padding: 20px 0;
     width: 100%;
     border-bottom: 1px solid #254159;
 
@@ -218,6 +217,7 @@ footer small{
         padding-right: 1%;
     }
 }
+
 #tenho-interesse {
 
     background-color: #c2d1df;
@@ -242,6 +242,14 @@ footer small{
 
     }
 }       
+
+#tenho-interesse {
+
+    background-color: #c2d1df;
+    width: 100%;
+    display: block;
+    float: left;
+}
 
 #tenho-interess form, 
 .cog-form__content, 
@@ -356,8 +364,12 @@ dd{
     .cheio{
         width: 97%;
     }
+
 }
 
 .Ficou{
     float: right;
 }
+
+}
+

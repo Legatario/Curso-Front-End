@@ -22,6 +22,18 @@ body{
   background-color: white;
   background-image: url('../images/pattern.png');
   color: black;
+
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
 }
 
 header {
@@ -200,12 +212,10 @@ footer p {
   font-size: 15px;
 }
 
-
 .Subtitulo {
 margin: .3rem;
 text-align: center;
 }
-
 
 .redes-sociais{
 
@@ -216,6 +226,12 @@ filter: drop-shadow(4px 4px);
 .redes-sociais a{
 padding-left: 10px;
 width: 100%;
+}
+
+@media (max-width: 768px){
+nav{
+  width: 30%;
+}
 
 }
 
@@ -248,7 +264,6 @@ nav{
 
 nav{
   width: 100%;
-
   background-color: yellow;
 }
 header h5 {
