@@ -1,0 +1,70 @@
+header{
+    border-bottom: 1px solid #254159;
+}
+
+header h1{
+    color: #07447a;
+}
+
+h2, h5{
+
+    color: #07447a;
+
+}
+
+section{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input, 
+textarea{
+    margin-bottom: 1rem;
+}
+
+.card{
+    width: 30%;
+    float: left;
+    margin: 5px;
+    height: 550px;
+
+}
+
+@media (max-width: 1200px) {
+
+    .card{
+        width: 48%;
+        height: 600px;
+    }
+    
+}
+
+@media (max-width: 990px) {
+
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+@media (max-width: 415px) {
+
+    header .nav-item{
+        font-size: 10px;
+    }
+
+    header h1{
+        text-align: center;
+    }
+    
+}
+
+.form small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}

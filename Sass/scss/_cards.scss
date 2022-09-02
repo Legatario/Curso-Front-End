@@ -1,0 +1,30 @@
+
+@mixin theme($theme: $color-03, $bg: $color-04) {
+    border: 1px solid $theme;
+    background-color: $bg;
+    
+}
+
+.cards {
+    &__title {
+        color: $color-03;
+        padding-left: $mt;
+    }
+
+    &__item {
+        @include theme ($theme: $color-default, $bg: $bg-color);
+        color: $color-04;
+
+        &--destacks{
+            @include theme;
+        }
+
+    }
+
+    &__button {
+        background-color: $color-default;
+    }
+    img {
+        max-height: 350px;
+    }
+}
